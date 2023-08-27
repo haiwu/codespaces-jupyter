@@ -6,7 +6,8 @@
   "waitFor": "onCreateCommand",
   "updateContentCommand": "python3 -m pip install -r requirements.txt",
   "postCreateCommand": "",
-  "remoteUser": "root",
+  "runArgs": ["--userns=keep-id"],
+  "containerUser": "vscode",
   "customizations": {
     "codespaces": {
       "openFiles": []
