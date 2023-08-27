@@ -7,6 +7,7 @@
   "updateContentCommand": "python3 -m pip install -r requirements.txt",
   "postCreateCommand": "",
   "runArgs": ["--userns=keep-id"],
+  "remoteUser": "vscode",
   "containerUser": "vscode",
   "customizations": {
     "codespaces": {
