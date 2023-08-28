@@ -6,8 +6,8 @@
   "waitFor": "onCreateCommand",
   "updateContentCommand": "python3 -m pip install -r requirements.txt",
   "postCreateCommand": "",
-  "runArgs": ["--userns=auto"],
-  "remoteUser": "root",
+  "runArgs": ["--userns=keep-id"],
+  "remoteUser": "hai",
   "containerEnv": {
     "HOME": "/workspaces/codespaces-jupyter"
   },
