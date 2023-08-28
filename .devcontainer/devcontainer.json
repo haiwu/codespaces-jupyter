@@ -6,16 +6,21 @@
   "waitFor": "onCreateCommand",
   "updateContentCommand": "python3 -m pip install -r requirements.txt",
   "postCreateCommand": "",
-  "runArgs": ["--userns=keep-id:uid=1000,gid=1000"],
-	"containerUser": "vscode",
-	"containerEnv": {
-          "HOME": "/home/vscode"
-  },
+  //"runArgs": ["--userns=keep-id:uid=1000,gid=1000"],
+	//"containerUser": "vscode",
+	//"containerEnv": {
+        //  "HOME": "/home/vscode"
+  //},
+  "runArgs": ["--userns=keep-id"],
   "customizations": {
     "codespaces": {
       "openFiles": []
     },
     "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.profiles.linux": { "bash": { "path": "/bin/bash" } }
+      },
       "extensions": [
         "ms-toolsai.jupyter",
         "ms-python.python"
