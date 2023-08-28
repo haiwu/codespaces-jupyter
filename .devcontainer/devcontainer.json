@@ -5,8 +5,8 @@
   },
   "waitFor": "onCreateCommand",
   "updateContentCommand": "python3 -m pip install -r requirements.txt",
-  "postCreateCommand": "chown -R ${localEnv:USER} /workspaces/codespaces-jupyter",
-  "runArgs": ["--userns=keep-id"],
+  "postCreateCommand": "",
+  "runArgs": ["--userns=''"],
   "remoteUser": "root",
   "containerEnv": {
     "HOME": "/workspaces/codespaces-jupyter"
