@@ -7,11 +7,11 @@
   "updateContentCommand": "python3 -m pip install -r requirements.txt",
   "postCreateCommand": "",
   //"runArgs": ["--userns=keep-id:uid=1000,gid=1000"],
-	//"containerUser": "vscode",
-	//"containerEnv": {
-        //  "HOME": "/home/vscode"
-  //},
-  "runArgs": ["--userns=keep-id"],
+  "containerUser": "codespace",
+  "containerEnv": {
+    "HOME": "/home/codespace"
+  },
+  //"runArgs": ["--userns=keep-id"],
   "customizations": {
     "codespaces": {
       "openFiles": []
