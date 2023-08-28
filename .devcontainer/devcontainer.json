@@ -6,7 +6,7 @@
   "waitFor": "onCreateCommand",
   "updateContentCommand": "python3 -m pip install -r requirements.txt",
   "postCreateCommand": "",
-  "runArgs": ["--userns=nomap"],
+  "runArgs": ["--userns=auto"],
   "remoteUser": "root",
   "containerEnv": {
     "HOME": "/workspaces/codespaces-jupyter"
