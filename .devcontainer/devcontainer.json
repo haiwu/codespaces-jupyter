@@ -6,21 +6,22 @@
   "waitFor": "onCreateCommand",
   "updateContentCommand": "sudo python3 -m pip install -r requirements.txt",
   "postCreateCommand": "",
-  "runArgs": ["--userns=keep-id"],
-  "remoteUser": "codespace",
-  "containerEnv": {
-    "HOME": "/workspaces/codespaces-jupyter"
-  },
+  //"runArgs": ["--userns=keep-id"],
+  //"remoteUser": "codespace",
+  "remoteUser": "root",
+  //"containerEnv": {
+  //  "HOME": "/workspaces/codespaces-jupyter"
+  //},
   //"runArgs": ["--userns=keep-id"],
   "customizations": {
     "codespaces": {
       "openFiles": []
     },
     "vscode": {
-      "settings": {
-        "terminal.integrated.defaultProfile.linux": "bash",
-        "terminal.integrated.profiles.linux": { "bash": { "path": "/bin/bash" } }
-      },
+      //"settings": {
+      //  "terminal.integrated.defaultProfile.linux": "bash",
+      //  "terminal.integrated.profiles.linux": { "bash": { "path": "/bin/bash" } }
+      //},
       "extensions": [
         "ms-toolsai.jupyter",
         "ms-python.python"
